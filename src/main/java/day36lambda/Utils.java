@@ -4,7 +4,7 @@ public class Utils {
     public static int getLengthSquare(String s){
         return s.length()*s.length();
     }
-    public static boolean isEven(String s){
+    public static boolean isLengthEven(String s){
         return s.length()%2==0;
     }
     public static String getLastChar(String s ){
@@ -14,5 +14,19 @@ public class Utils {
         System.out.println(obj + " ");
     }
 
+    public static boolean isNumberEven(int x){
+        return x%2==0;
+    }
 
+    public static int getSumOfDigits(int x){
+
+        int sum=0;
+        while (x!=0){
+
+            sum=sum+ x%10;
+
+           x= x/10;
+        }
+        return sum;
+    }
 }
