@@ -33,12 +33,13 @@ public class BiletRezervasyon {
 
         Bilet bilet =new Bilet();
 
+       start(bus,bilet);
 
     }
-    public static void start(Bus bus){
+    public static void start(Bus bus,Bilet bilet){
 
         Scanner scan=new Scanner(System.in);
-
+int select;
         do {
             //6-kullanicidan bilgileri alalim
             System.out.println("---Bilet rezervasyon sistemine hosgeldiniz");
@@ -67,13 +68,69 @@ public class BiletRezervasyon {
             if(distance>0 &&age >0&& check){
 
                 //9- bilet fiyatini hesaplayalim
+                bilet.distance=distance;//mesafe
+                bilet.typeNo=type;//yolculuk tipi
+                bilet.seatNo=seat;//koltuk no
+
+                //get ile bilet price set edelim
+                bilet.price=getTotal(bilet,age);//fiyat hesaplama
+
+                //bileti yazdiralim
+                System.out.println("---------------------");
+                bilet.printBilet(bus);//bilti yazdir
+
             }else{
                 System.out.println("hatali giris yaptiniz...");
 
             }
+            System.out.println("yeni islem icin herhangi bir sayi giriniz, cikis icin 0 giriniz");
+            select=scan.nextInt();
 
+        }while (select!=0);
 
-        }while (false);
+        System.out.println("iyi gunler dileriz");
+    }
+
+    private static double getTotal(Bilet bilet,int age){
+        double dist=bilet.distance;//mesafe
+        int type= bilet.typeNo;//yolculuk tipi
+        int seat= bilet.seatNo;//koltuk no
+
+        double total=0;
+        switch (type){
+            case 1:
+                if(seat%3==0){
+                    total=dist*1.2;
+                }else{
+                    total=dist*1;
+                }
+                System.out.println("tutar :" +total);
+                break;
+            case 2:
+
+                if(seat%3==0){
+                    total=dist*2.4;//cift yon oldugu icin
+                }else{
+                    total=dist*2;
+                    System.out.println("tutar :" +total);
+                }
+                total=total*0.8;//indirim yaptik
+                System.out.println("tutar :" +total);
+                break;
+
+        }
+   if(age<=12){
+       total=total*0.5;
+       System.out.println("yas indirim tutar :" +total);
+
+   }else if(age>12 &&age<24){
+       total=total*0.9;
+       System.out.println("yas indirim tutar :" +total);
+   }else if(age>65){
+       total=total*0.7;
+       System.out.println("yas indirim tutar :" +total);
+   }
+   return total;
     }
 
 }
