@@ -39,6 +39,8 @@ Project: Bir siteye üye olma ve giriş yapma sayfası tasarlayınız.
     public static void start(){
 
         Scanner input=new Scanner(System.in);
+
+        UserService service=new UserService();
         //1 =kullaniciya islem menusu gosterelim
 
         int select;//secenek
@@ -52,10 +54,13 @@ Project: Bir siteye üye olma ve giriş yapma sayfası tasarlayınız.
             switch (select){
                 case 1:
                     //register uye olma
+                   service.register();
+                    System.out.println(service.userList);
 
                     break;
                 case 2:
                     //login yani giris
+                    service.login();
                     break;
                 case 0:
                     //cikis
