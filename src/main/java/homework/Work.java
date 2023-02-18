@@ -1,6 +1,6 @@
 package homework;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Work {
     public static void main(String[] args) {
@@ -8,8 +8,9 @@ public class Work {
 
 
 
-        }
 
+
+    }
 
     }
 

@@ -15,14 +15,46 @@ package miniproject.MiniBookStore;
         */
 
 
+import java.util.Scanner;
+
 public class MiniBookStore {
     public static void main(String[] args) {
 
         enter();
 
     }
-    //1=product,book,notebook,
-    public static void enter(){
 
+    //1=product,book,notebook,
+    public static void enter() {
+        Scanner input=new Scanner(System.in);
+        int select;
+        System.out.println("------ Mini Book Store--------");
+          do {
+              System.out.println("urun yonetim paneli");
+              System.out.println("1=Kitaplar");
+              System.out.println("2= Defterler");
+              System.out.println("0 Cikis");
+              System.out.println("seciminiz");
+              select=input.nextInt();
+              input.nextLine();
+              ProductService sevice;//interfaceyi referans olrak cagiriyoryz
+              switch (select){
+                  case 1:
+                      sevice=new BookService();
+                      sevice.processMenu();
+                      break;
+                  case 2:
+                      sevice=new NotebookService();
+                      sevice.processMenu();
+                      break;
+                  case 0:
+                      System.out.println("iyi gunler....");
+                      break;
+                  default:
+                      System.out.println("hatali giris");
+                      break;
+              }
+
+          }while (select!=0);
     }
 }

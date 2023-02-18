@@ -23,7 +23,7 @@ public class NotebookService implements ProductService{
     }
 
     @Override
-    public void filterProduct(String filter) {
+    public void filterProducts(String filter) {
 
     }
 }

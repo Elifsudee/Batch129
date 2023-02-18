@@ -7,5 +7,7 @@ public interface ProductService {
     void listProduct();
     void addProduct();
     void  deleteProduct();
-    void filterProduct(String filter);
+    void filterProducts(String filter);
+
+
 }
