@@ -10,6 +10,7 @@ public class ListtekiElemanlariTekrarsizYazdirma {
         //INTERVIEW Sorusu
 
         //Verilen bir Listteki elemanlari tekrasiz olarak yazdirma
+        //[2,3,2,2,5] ==>[2,3,5]
 
         List<Integer> a = new ArrayList<>();
         a.add(2);
