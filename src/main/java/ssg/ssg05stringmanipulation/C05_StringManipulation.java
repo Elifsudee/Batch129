@@ -1,7 +1,7 @@
 package ssg.ssg05stringmanipulation;
 
 public class C05_StringManipulation {
-    public class C05_stringManipulation {
+
         public static void main(String[] args) {
         /*
         soru 5)Bir String değişkeni oluşturunuz ve String değişkenin konsolda boşluk olmayan son
@@ -14,4 +14,4 @@ public class C05_StringManipulation {
 
         }
     }
-}
+

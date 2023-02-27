@@ -1,7 +1,7 @@
 package ssg.ssg05stringmanipulation;
 
 public class C07_StringManipulation {
-    public class C07_stringManipulation {
+
         /*
         soru7) girilen Stringdeki tum rakamları "*" ile degistirin
         */
@@ -14,4 +14,4 @@ public class C07_StringManipulation {
 
         }
     }
-}
+

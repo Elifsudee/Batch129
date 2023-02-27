@@ -20,21 +20,21 @@ public class Market {
 	public static void main(String[] args) {
 		
 		/*
-		* Bir bakkalin 7 gunluk tam kazanalarini g�nl�k olarak g�steren bir program yaz�n�z.
-     * Ayr�ca bakkal�n bu hafta ortalama kazand��� miktar� g�steren bir method yaz�n�z.
-     * Ayr�ca bakkal�n hangi g�nler ortalaman�n �st�ne kazand���n� g�steren bir method yaz�n�z.
-     * Ayr�ca bakkal�n hangi g�nler ortalaman�n alt�nda kazand���n� g�steren bir method yaz�n�z.
+		* Bir bakkalin 7 gunluk tam kazanalarini gunluk olarak gosteren bir program yaziniz.
+     * Ayrica bakkalin bu hafta ortalama kazandigi miktari gosteren bir method yaziniz.
+     * Ayrica bakkalin hangi gunler ortalamanin ustune kazandigini gosteren bir method yaziniz.
+     * Ayrica bakkalin hangi gunler ortalamanin altinda kazandigini gosteren bir method yaziniz.
      *
-     * 1. Ad�m : G�nleri i�eren bir tane ArrayList olu�turun. (gunler)     ****
-     * 2. Ad�m : G�nl�k kazan�lar� ekleyece�imiz bir tane ArrayList olu�turun. (gunlukKazanclar)**********
-     * 3. Ad�m : While d�ng�s� ile kullan�c�dan 7 g�nl�k kazan�lar� tekek teker al�p gunlukKazanclar ArrayList'e ekle.*******
-     * 4. Ad�m : getOrtalamaKazanc() adl� method ile ortalama kazanc� al�n.  ******
-     * 5. Ad�m : getOrtalamaninUstundeKazancG�nleri() adl� method olu�turun.
-     * 			 for d�ng�s� ile t�m g�nleri ortalama kazan� ile kar��la�t�r
-     * 			 ortalama kazan�tan y�ksekse o g�nleri return yap.
-     * 6. Ad�m : getOrtalamaninAltindaKazancG�nleri() adl� method olu�turun.
-     * 			 for d�ng�s� ile t�m g�nleri ortalama kazan� ile kar��la�t�r
-     * 			 ortalama kazan�tan a�a��ysa o g�nleri return yap.
+     * 1. Adim : Gunleri iceren bir tane ArrayList olusturun. (gunler)     ****
+     * 2. Adim : Gunluk kazanclari ekleyecegimiz bir tane ArrayList olusturun. (gunlukKazanclar)**********
+     * 3. Adim : While dongusu ile kullanicidan 7 gunluk kazanclari tekek teker alip gunlukKazanclar ArrayList'e ekle.*******
+     * 4. Adim : getOrtalamaKazanc() adli method ile ortalama kazanci alin.  ******
+     * 5. Adim : getOrtalamaninUstundeKazancGunleri() adli method olusturun.
+     * 			 for dongusu ile tum gunleri ortalama kazanc ile karsilastir
+     * 			 ortalama kazanctan yuksekse o gunleri return yap.
+     * 6. Adim : getOrtalamaninAltindaKazancGunleri() adli method olusturun.
+     * 			 for dongusu ile tum gunleri ortalama kazanc ile karsilastir
+     * 			 ortalama kazanctan asagiysa o gunleri return yap.
 		 * */
 		
 
